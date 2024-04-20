@@ -1,6 +1,4 @@
-import fs from 'fs'
+#!/usr/bin/env node
+import * as fs from 'fs'
 
-const hola: string = ''
-console.log(hola)
-
-fs.readFileSync('')
+const CHOICES = fs.readdirSync(`${__dirname}/../templates`)
