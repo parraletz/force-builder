@@ -1,0 +1,31 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "plugin:@stylistic/ts/"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "rules": {
+    "semi": ["error", "never"],
+    "quotes": ["error", "single"],
+    "@typescript-eslint/semi": ["error", "never"],
+    "comma-dangle": "off",
+    "@typescript-eslint/comma-dangle": ["error", "never"],
+    "no-extra-semi": "error",
+    "no-unused-labels": "error",
+    
+    "camelcase": "error",
+    "indent": ["error", 2],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      { "argsIgnorePattern": "^_" }
+    ],
+    "@typescript-eslint/no-undef": "error",
+    "@typescript-eslint/camelcase": "error",
+    "@stylistic/ts/indent": ["error", 2]
+  }
+}
