@@ -5,9 +5,9 @@
   "main": "dist/cli.js",
   "author": "Alex Parra",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "bin": {
-    "force-builder": "cli.js"
+    "force-builder": "./dist/cli.js"
   },
   "scripts": {
     "build": "tsc",
