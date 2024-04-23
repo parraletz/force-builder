@@ -40,7 +40,6 @@ function processTemplate(
   projectName: string,
   projectNameFile?: string
 ) {
-
   fs.readdirSync(templatePath).forEach((file) => {
     const sourcePath = path.join(templatePath, file)
     const destPath = path.join(projectPath, file.replace('.njk', ''))
