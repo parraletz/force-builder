@@ -14,9 +14,11 @@ const compat = new FlatCompat({
 })
 
 export default [
-  { languageOptions: { globals: globals.browser } },
-  ...compat.extends('standard-with-typescript'),
   {
+    files: ['**/*.js'],
+    languageOptions: {
+      sourceType: 'commonjs'
+    },
     rules: {
       semi: ['error', 'never'],
       quotes: ['error', 'single'],
@@ -27,5 +29,7 @@ export default [
       camelcase: '[error, always]',
       indent: ['error', 2]
     }
-  }
+  },
+  { languageOptions: { globals: globals.browser } },
+  ...compat.extends('airbnb-base')
 ]

@@ -1,10 +1,9 @@
 {
   "compilerOptions": {
-    "module": "NodeNext",
+    "module": "CommonJS",
     "esModuleInterop": true,
     "target": "ES2022",
     "noImplicitAny": true,
-    "moduleResolution": "NodeNext",
     "sourceMap": true,
     "outDir": "dist",
     "baseUrl": ".",
