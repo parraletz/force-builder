@@ -1,8 +1,8 @@
 {
-  "name": "{{ file }}",
+  "name": "lambda-local",
   "version": "0.1.0",
   "bin": {
-    "{{ name }}": "bin/{{ file }}.js"
+    "LambdaLocal": "bin/lambda-local.js"
   },
   "scripts": {
     "build": "tsc",

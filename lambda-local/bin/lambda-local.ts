@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import * as cdk from 'aws-cdk-lib'
 import 'source-map-support/register'
-import { {{ name }}Stack } from '../lib/{{ file }}-stack'
+import { LambdaLocalStack } from '../lib/lambda-local-stack'
 
 const app = new cdk.App()
-new {{ name }}Stack(app, '{{ name }}Stack', {})
+new LambdaLocalStack(app, 'LambdaLocalStack', {})
