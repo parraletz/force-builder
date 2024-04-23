@@ -1,11 +1,12 @@
 {
   "name": "force-builder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Project builder, helper to create a scaffollder bases on best practices for different AWS Services",
   "main": "dist/cli.js",
   "author": "Alex Parra",
   "license": "MIT",
   "private": false,
+  "readme": "docs/README.md",
   "bin": {
     "force-builder": "./dist/cli.js"
   },
